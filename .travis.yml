@@ -22,7 +22,7 @@ install:
 script:
   - mkdir tmp_for_test
   - cd tmp_for_test
-  - python -c "import pytest; pytest.main()" -s -v hmmlearn
+  - python -c "import pytest; pytest.main()" -s -v --pyarg hmmlearn
   - cd ..
 
 deploy:
